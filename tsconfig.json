@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/app/api/auth/[...nextauth]/route.js",
+    "src/app/api/auth/[...nextauth]/authOptions.js",
+    "src/app/api/auth/register/route.js",
+    "src/app/api/auth/login/route.js",
+    "src/DB/db.config.js"
+  ],
+  "exclude": ["node_modules"]
+}
